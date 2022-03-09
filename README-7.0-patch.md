@@ -1,1 +1,1 @@
-This will contain a short documentation about the 7.0-patch branch.
+This - at the moment - is an artifical file to initiate a pull request against 7.0-patch
