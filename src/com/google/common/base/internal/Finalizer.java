@@ -188,17 +188,7 @@ public class Finalizer extends Thread {
   }
 
   public static Field getInheritableThreadLocalsField() {
-    try {
-      Field inheritableThreadLocals
-          = Thread.class.getDeclaredField("inheritableThreadLocals");
-      inheritableThreadLocals.setAccessible(true);
-      return inheritableThreadLocals;
-    } catch (Throwable t) {
-      logger.log(Level.INFO, "Couldn't access Thread.inheritableThreadLocals."
-          + " Reference finalizer threads will inherit thread local"
-          + " values.");
-      return null;
-    }
+    return null;
   }
 
   /** Indicates that it's time to shut down the Finalizer. */
